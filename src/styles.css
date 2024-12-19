@@ -27,10 +27,10 @@ h2 {
 }
 
 .input-container {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
 }
 
 input#message {
@@ -40,6 +40,15 @@ input#message {
 	border: 1px solid #ccc;
 	border-radius: 8px;
 	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#disconnect {
+	background-color: red;
+}
+
+button:disabled {
+	background-color: #ccc !important;
+	cursor: not-allowed;
 }
 
 button {

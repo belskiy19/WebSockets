@@ -9,8 +9,13 @@
 		<h2>Чат</h2>
 		<div id="chat"></div>
 		<div class="input-container">
+			<button onclick="disconnect()" id="disconnect">Відключитися</button>
 			<input id="message" placeholder="Введіть повідомлення" />
-			<button onclick="sendMessage()">Надіслати</button>
+			<button onclick="sendMessage()" id="send">Надіслати</button>
+		</div>
+		<div id="info" style="display: none">
+			<h3>Ви відключились від чату</h3>
+			<button onclick="connect()" id="connect">Підключитися</button>
 		</div>
 		<script src="client.js"></script>
 	</body>
